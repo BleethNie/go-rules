@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
+	"github.com/BleethNie/go-rules"
 	"testing"
 	"time"
 
@@ -11,8 +12,6 @@ import (
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-
-	rules "github.com/sonda2208/go-rules"
 )
 
 type Evaluation struct {
