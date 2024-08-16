@@ -4,7 +4,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/sonda2208/go-rules"
+	"github.com/BleethNie/go-rules"
 	"github.com/stretchr/testify/require"
 )
 

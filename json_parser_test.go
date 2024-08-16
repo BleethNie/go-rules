@@ -1,12 +1,11 @@
 package rules_test
 
 import (
+	"github.com/BleethNie/go-rules"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-
-	"github.com/sonda2208/go-rules"
 )
 
 func TestJSONParser(t *testing.T) {

@@ -1,4 +1,4 @@
-module github.com/sonda2208/go-rules
+module github.com/BleethNie/go-rules
 
 go 1.22.5
 

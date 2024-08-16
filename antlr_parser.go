@@ -2,8 +2,8 @@ package rules
 
 import (
 	"fmt"
+	"github.com/BleethNie/go-rules/parser"
 	"github.com/antlr4-go/antlr/v4"
-	"github.com/sonda2208/go-rules/parser"
 	"strconv"
 	"time"
 )
