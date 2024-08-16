@@ -2,11 +2,10 @@ package rules
 
 import (
 	"fmt"
+	"github.com/antlr4-go/antlr/v4"
+	"github.com/sonda2208/go-rules/parser"
 	"strconv"
 	"time"
-
-	"github.com/antlr/antlr4/runtime/Go/antlr"
-	"github.com/sonda2208/go-rules/parser"
 )
 
 type exprStack struct {

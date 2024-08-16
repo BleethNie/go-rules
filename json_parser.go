@@ -5,15 +5,15 @@ import (
 	"errors"
 )
 
-type jsonRule struct {
+type JsonRule struct {
 	Comparator Op          `json:"comparator,omitempty"`
-	Rules      []jsonRule  `json:"rules,omitempty"`
+	Rules      []JsonRule  `json:"rules,omitempty"`
 	Var        string      `json:"var,omitempty"`
 	Op         Op          `json:"op,omitempty"`
 	Val        interface{} `json:"val,omitempty"`
 }
 
-func (r jsonRule) IsValid() error {
+func (r JsonRule) IsValid() error {
 	var op Op
 	if len(r.Comparator) > 0 {
 		if len(r.Rules) == 0 {
@@ -64,7 +64,7 @@ func (r jsonRule) IsValid() error {
 }
 
 func ParseFromJSON(raw json.RawMessage) (Expr, error) {
-	rule := jsonRule{}
+	rule := JsonRule{}
 	err := json.Unmarshal(raw, &rule)
 	if err != nil {
 		return nil, err
@@ -78,7 +78,7 @@ func ParseFromJSON(raw json.RawMessage) (Expr, error) {
 	return expr, nil
 }
 
-func parseExpr(rule *jsonRule) (Expr, error) {
+func parseExpr(rule *JsonRule) (Expr, error) {
 	err := rule.IsValid()
 	if err != nil {
 		return nil, err

@@ -1,6 +1,6 @@
-// Code generated from E:/02_Resource/01_Code/jc_go_manager/go-rules/parser/Rules.g4 by ANTLR 4.13.1. DO NOT EDIT.
+// Code generated from Rules.g4 by ANTLR 4.8. DO NOT EDIT.
 
-package parser // Rules
+package _ // Rules
 
 import "github.com/antlr4-go/antlr/v4"
 
